@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: blue;
+    overflow: hidden;
+}
+
+.gamecontainer{
+  background-image: url('bg1.webp');
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  width: 100%;
+  height: 100vh;
+}
+
+.human{
+    background-image: url('tottoise.webp');
+    background-repeat: no-repeat;
+    width: 233px;
+    height: 94px;
+    background-size: 40%;
+    position: absolute;
+    bottom: -18px;
+    left: 82px;
+}
+
+.hurdle{
+    background-image: url('m3.webp');
+    background-repeat: no-repeat;
+    width: 249px;
+    height: 206px;
+    background-size: 40%;
+    position: absolute;
+    bottom: -112px;
+    left: 63vw;
+}
+.animateHuman{
+    animation: human 10s linear;
+}
+
+.hurdles{
+    animation: hurdles 5s linear infinite;
+}
+.gameover{
+    position:relative ;
+    top: 63px;
+    text-align: center;
+    font-size: 35px;
+    color: #98ff11;
+    font-family: cursive;
+}
+#scoreCount{
+    position:absolute;
+    padding: 5px;
+    top: 20px;
+    right: 23px;
+    width: 120px;
+    border: 2px solid rgb(255, 94, 94);
+    border-radius: 20px;
+    font-family: cursive;
+    color: #08f63b;
+font-size: 18px;
+}
+    .losehuman{
+        bottom: -64px;
+ }
+    .losehuman::before{
+        content: "\1F62D";
+        position: absolute;
+        left: 53px;
+        top: -24px;
+        font-size: 43px;
+      
+ }
+    
+
+@keyframes human {
+    0%{
+        bottom: 0;
+    }
+    25%{
+        bottom: 1500px;
+
+    }
+    100%{
+        bottom: 0;
+
+    }
+    
+}
+@keyframes hurdles {
+0%{
+    left: 100vw;
+}
+100%{
+    left: -10vw;
+}
+}
