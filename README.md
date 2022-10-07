@@ -1,6 +1,6 @@
 # seaplay-a-game
-an amazing simple game for kids
-scores are also updating
+an amazing and simple game for kids
+scores are also updating in the score menu
 
 few ss:-
 ![Screenshot (1627)](https://user-images.githubusercontent.com/72397485/119009315-9f202a00-b9b0-11eb-8d4b-7a489cd88a21.png)
